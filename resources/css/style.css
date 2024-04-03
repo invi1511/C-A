@@ -1,143 +1,238 @@
 /* general */
 body {
-    margin: 0 auto;
-    font-family: Cabin, Geneva, Tahoma, sans-serif;
-    color: rgb(90, 88, 88);
-}
-
-/* h1 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-p {
-    font-size: 20px;
-} */
-
-a {
-    text-decoration: none;
-    color: rgb(90, 88, 88);
-}
-
-.lightgreytext {
-    color: rgb(180, 178, 178);
-}
-
-img {
-    display: block;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #d1dedd;
+    color: #767f7e;
+  }
+  ul, li {
+    list-style-type: none;
+  }
+  img {
     max-width: 100%;
-}
-
-.flex {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-}
-
-.left {
-    width: 60%;
-}
-
-.right {
-    width: 40%;
-}
-
-
-/* header */
-
-.primary-header {
+  }
+  video {
+    max-width: 100%;
+  }
+  h4 {
+    font-weight: 550;
+  }
+  a {
+    text-decoration: none;
+    color: #767f7e;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  .split-grid {
+    grid-column: span 2;
+  }
+  
+  /* header */
+  .lightgrey-text {
+    color: #a9adac;
+  }
+  .primary-header {
     display: flex;
     gap: 1rem;
     height: 64px;
     align-items: center;
     justify-content: space-between;
-    margin: 0 24px ;
-}
-
-.logo {
+    padding: 0 24px ;
+    background-color: white;
+  }
+  .logo {
     height: 32px;
     display: flex;
     align-items: center;
     flex: 1;
-}
-
-.hidden {
+  }
+  .hidden {
     display: none;
-}
-
-@media (max-width: 35em) {
-    .menu {
-        display: none;
-    }
-
-    .hidden {
-        display: block;
-    }
-
-    .logo {
-        flex: none;
-    }
-}
-
-/* banner Section */
-.banner {
-    padding: 2rem 1rem;
-    background-color: lightgray;
-    gap: 1.5rem;
-}
-
-.banner button {
+  }
+  
+   /* banner section */
+   .aside {
+    align-self: center;
+    padding: 2rem 1.5rem;
+   }
+   .aside button {
     background-color: rgb(123, 121, 121);
     border: none;
     color: white;
     padding: 0.5rem;
     width: 100%;
-}
-
-@media (max-width: 35em) {
-    .banner {
-        flex-direction: column;
-        padding: 0;
-        gap: 0;
-    }
-    .left {
-        width: auto;
-    }
-    .right {
-        width: auto;
-        padding: 0 1rem 2rem 1rem;
-    }
-
-}
-
-/* information-main */
-
-.information-main .article {
-    border-left: 1px solid lightgray;
-}
-
-.information-main .article, .image {
+  }
+  .banner {
+    padding: 2rem 0 2rem 1.5rem;
+  }
+  
+  /* information main section */
+  .information-main {
+    padding: 2rem 1.5rem;
+    grid-row: span 3;
+  }
+  .aside-inf {
+    display: grid;
+    grid-template-columns: 35% 65%;
     padding: 2rem 1rem;
-}
-
-.article {
-    gap: 1.5rem;
-}
-
-.article .left {
-    width: 35%;
-}
-
-.article .right {
-    width: 65%;
-}
-
-
-/* Start Learning Sectio */
-
-/* Thesis Exhibit Section */
-video {
-    width: 60%;
-}
-
-
+    border: 1px solid #d1dedd;
+    align-items: center;
+    gap: 1rem;
+  }
+  .bg-white {
+    background-color: white;
+  }
+  .bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  .information-orientation {
+    background-image: url("../images/information-orientation.jpg");
+  }
+  .information-campus {
+    background-image: url("../images/information-campus.jpg");
+  }
+  .guest-lecture {
+    background-image: url("../images/information-guest-lecture.jpg");
+  }
+  .thesis-fisma {
+    background-image: url("../images/thesis-fisma.jpg");
+  }
+  .thesis-now-and-then {
+    background-image: url("../images/thesis-now-and-then.jpg");
+  }
+  .empty-block  {
+    height: 2rem;
+  }
+  
+  /* start learning section */
+  .start-learning {
+    text-align: center;
+  }
+  .galery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 4.5rem 2em 4.5rem;
+    gap: 2rem;
+  }
+  .text-galery {
+    padding: 1rem 1rem 1.5rem 1rem;
+  }
+  
+  /* thesis Exhibit Section */
+  .thesis-exhibits {
+    padding: 2rem 1.5rem;
+    grid-row: span 3;
+  }
+  .aside-thesis {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: 2rem 1rem;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* footer */
+  .footer-left {
+    padding: 1rem 1.5rem;
+    align-self: center;
+  }
+  .footer-right {
+    padding: 1rem 1.5rem;
+    align-self: center;
+    text-align: right;
+  }
+  .footer-right a {
+    margin-left: 1rem;
+  }
+  .flex {
+    display: flex;
+  }
+  
+  
+  
+  /* responsive */
+  @media screen and (max-width: 700px) {
+    body {
+      background-color: white;
+    }
+    /* header */
+    .menu {
+        display: none;
+    }
+    .hidden {
+        display: block;
+    }
+    .logo {
+        flex: none;
+    }
+    /* banner section */
+    article {
+      grid-column: span 2;
+    }
+    .banner {
+      padding: 0;
+    }
+    .aside {
+      padding: 0 1rem 2rem 1rem;
+      background-color: #d1dedd;
+    }
+    /* information main section */
+    .information-main {
+      display: none;
+    }
+    .aside-inf {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+      border: none;
+    }
+    .bg-image {
+      min-height: 200px;
+    }
+    .information-orientation {
+      background-image: url("../images/information-orientation-mobile.jpg");
+    }
+    .information-campus {
+      background-image: url("../images/information-campus-mobile.jpg");
+    }
+    .guest-lecture {
+      background-image: url("../images/information-guest-lecture-mobile.jpg");
+    }
+    .white-block {
+      background-color: white;
+    }
+    .empty-block  {
+      display: none;
+    }
+    /* start learning section */
+    .galery img, i, p {
+      display: none;
+    }
+    .galery {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+    .galery-block {
+      background-color: #d1dedd;
+    }
+    /* thesis Exhibit Section */
+    .thesis-exhibits {
+      grid-template-columns: 1fr;
+    }
+    .thesis-exhibits h1, p {
+      display: none;
+    }
+    .aside-thesis {
+      display: none;
+    }
+    /* footer */
+    .footer-right {
+      display: none;
+    }
+    .footer-left p {
+      display: block;
+    }
+  }
