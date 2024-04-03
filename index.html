@@ -1,171 +1,188 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./resources/css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap" rel="stylesheet">
-        <title>Colmar Academy</title>
-    </head>
+<html lang="en">
 
-    <body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./resources/images/ic-logo.svg" type="image/x-icon">
+  <!-- my css -->
+  <link rel="stylesheet" href="./resources/css/style.css">
+  <title>ColmarAcademy</title>
+</head>
 
-<!-- Header -->
-        <header class="primary-header">
-            <a class="logo" href="#default" >
-                <img src="./resources/images/ic-logo.svg">
-                <span class="menu">COLMAR</span>
-                <span class="lightgreytext menu">ACADEMY</span>
-            </a>
-            <a href="./index.html">
-                <img class="hidden" src="./resources/images/ic-on-campus.svg">
-                <span class="menu">On campus</span>
-            </a>
-            <a href="#online">
-                <img class="hidden" src="./resources/images/ic-online.svg">
-                <span class="menu">Online</span>
-            </a>
-            <a class="menu" href="#our companies">
-                <span>Our companies</span>
-            </a>
-            <a href="#sign in">
-                <img class="hidden" src="./resources/images/ic-login.svg">
-                <span class="menu">Sign in</span>
-            </a>
-        </header>
-
-<!-- Banner Section -->
-        <div class="banner flex">
-            <div class="left">
-                <img src="./resources/images/banner.jpg" alt="Banner">
-            </div>
-            <div class="right">
-                <h1>Learn something new everyday</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button>Start here</button>
-            </div>
+<body>
+  <main class="grid-container">
+<!-- header -->
+    <header class="primary-header split-grid">
+      <a class="logo" href="#default">
+          <img src="./resources/images/ic-logo.svg">
+          <span class="menu">COLMAR</span>
+          <span class="lightgrey-text menu">ACADEMY</span>
+      </a>
+      <a href="./index.html">
+          <img class="hidden" src="./resources/images/ic-on-campus.svg">
+          <span class="menu">On campus</span>
+      </a>
+      <a href="#online">
+          <img class="hidden" src="./resources/images/ic-online.svg">
+          <span class="menu">Online</span>
+      </a>
+      <a class="menu" href="#our companies">
+          <span>Our companies</span>
+      </a>
+      <a href="#sign in">
+          <img class="hidden" src="./resources/images/ic-login.svg">
+          <span class="menu">Sign in</span>
+      </a>
+    </header>
+<!-- banner section -->
+    <article class="banner">
+      <img src="./resources/images/banner.jpg" alt="banner image">
+    </article>
+    <article class="aside">
+        <h1>Learn something new everyday</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Start here</button>
+    </article>
+<!-- information main section -->
+    <article class="information-main bg-white">
+      <img src="./resources/images/information-main.jpg">
+      <div>
+        <h1>It doesn't hurt to keep practicing</h1>
+          <p>"Curabitur vitae libero in ipsum porttitor consequat. 
+              Aliquam et commodo lectus, nec consequat neque.
+              Sed non accumsan urna. Phasellus sed consequat ex.
+              Etiam eget magna laoreet, efficitur dolor consequat, 
+              tristique ligula."</p>
+          <br/>
+          <i>Emanuel, Sr Strategist at Hiring.com</i>
+      </div>
+    </article>
+    <article class="aside-inf bg-white">
+        <div class="bg-image information-orientation"></div>
+        <div>
+          <h1>Orientation date</h1>
+          <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+          <a href="#">Read more</a>
         </div>
-
- <!-- Information Main Section -->
-        <div class="information-main flex">
-            <div class="image left">
-                <img src="./resources/images/information-main.jpg" alt="Information Main">
-                <h1>It doesn't hurt to keep practicing</h1>
-                <p>"Curabitur vitae libero in ipsum porttitor consequat. 
-                    Aliquam et commodo lectus, nec consequat neque.
-                    Sed non accumsan urna. Phasellus sed consequat ex.
-                    Etiam eget magna laoreet, efficitur dolor consequat, 
-                    tristique ligula."</p>
-                    <br/>
-                <i>Emanuel, Sr Strategist at Hiring.com</i>
-            </div>
-            <div class="article right">
-                <article class="flex">
-                    <div class="left">
-                        <img src="./resources/images/information-orientation.jpg">
-                    </div>
-                    <div class="right">
-                        <h1>Orientation date</h1>
-                        <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                        <a href="#">Read more</a>
-                    </div>
-                </article>
-                <article class="flex">
-                    <div class="left">
-                        <img src="./resources/images/information-campus.jpg">
-                    </div>
-                    <div class="right">
-                        <h1>Our campus</h1>
-                        <p>Find which campus is close by you</p>
-                        <a href="#">Read more</a>
-                    </div>
-                </article>
-                <article class="flex">
-                    <div class="left">
-                        <img src="./resources/images/information-guest-lecture.jpg">
-                    </div>
-                    <div class="right">
-                        <h1>Our guest lecture</h1>
-                        <p>Join a keynote with Oliver Sack about musik in medical treatment</p>
-                        <a href="#">Read more</a>
-                    </div>
-                </article>
-            </div>
+    </article>
+    <article class="aside-inf bg-white">
+        <div class="bg-image information-campus"></div>
+        <div>
+          <h1>Our campus</h1>
+          <p>Find which campus is close by you</p>
+          <a href="#">Read more</a>
         </div>
+      </article>
+      <article class="aside-inf white-block">
+        <div class="bg-image guest-lecture"></div>
+        <div>
+          <h1>Our guest lecture</h1>
+          <p>Join a keynote with Oliver Sack about musik in medical treatment</p>
+          <a href="#">Read more</a>
+        </div>
+      </article>
+      <article class="empty-block bg-white split-grid"></article>
+ <!-- start learning section -->
+      <article class="start-learning split-grid">
+        <h1>Start learning</h1>
+      </article>
+      <article class="galery split-grid">
+        <div class="galery-block bg-white">
+          <img src="./resources/images/course-software.jpg">
+          <section class="text-galery">
+            <h4>Software engineering</h4>
+            <i>Courses</i>
+            <p>Web Development, Mobile Deevelopment,iOT, APis</p>
+          </section>
+      </div>
+      <div class="galery-block bg-white">
+          <img src="./resources/images/course-computer-art.jpg">
+          <section class="text-galery">
+            <h4>Computer art</h4>
+            <i>Courses</i>
+            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+          </section>
+      </div>
+      <div class="galery-block bg-white">
+          <img src="./resources/images/course-design.jpg">
+          <section class="text-galery">
+            <h4>Design</h4>
+            <i>Courses</i>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </section>
+      </div>
+      <div class="galery-block bg-white">
+          <img src="./resources/images/course-data.jpg">
+          <section class="text-galery">
+            <h4>Data</h4>
+            <i>Courses</i>
+            <p>Data Science, Big Data, SQL, Data Visualiyation</p>
+          </section>
+      </div>
+      <div class="galery-block bg-white">
+          <img src="./resources/images/course-business.jpg">
+          <section class="text-galery">
+            <h4>Business</h4>
+            <i>Courses</i>
+            <p>Product Development, Business Development, Startup</p>
+          </section>
+      </div>
+      <div class="galery-block bg-white">
+          <img src="./resources/images/course-marketing.jpg">
+          <section class="text-galery">
+            <h4>Marketing</h4>
+            <i>Courses</i>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </section>
+      </div>
+  </article>
 
-
- <!-- Start Learning Section -->
-        <section>
-            <h1>Start learning</h1>
-            <article>
-                <img src="./resources/images/course-software.jpg">
-                <h1>Software engineering</h1>
-                <i>Courses</i>
-                <p>Web Development, Mobile Development,iOT, APis</p>
-            </article>
-            <article>
-                <img src="./resources/images/course-computer-art.jpg">
-                <h1>Computer art</h1>
-                <i>Courses</i>
-                <p>Imaging & Design, Web Design, Motion Graphics 
-                    & Visual Effects, Computer Animation</p>
-            </article>
-            <article>
-                <img src="./resources/images/course-design.jpg">
-                <h1>Design</h1>
-                <i>Courses</i>
-                <p>User Experience Design, User Research, Visual Design</p>
-            </article>
-            <article>
-                <img src="./resources/images/course-data.jpg">
-                <h1>Data</h1>
-                <i>Courses</i>
-                <p>Data Science, Big Data, SQL, Data Visualization</p>
-            </article>
-            <article>
-                <img src="./resources/images/course-business.jpg">
-                <h1>Business</h1>
-                <i>Courses</i>
-                <p>Product Development, Business Development, Startup</p>
-            </article>
-            <article>
-                <img src="./resources/images/course-marketing.jpg">
-                <h1>Marketing</h1>
-                <i>Courses</i>
-                <p>Analytics, Content Marketing, Mobile Marketing</p>
-            </article>
-        </section>
-
- <!-- Thesis Exhibit Section -->
-        <section>
-            <h1>Thesis exhibit</h1>
-            <video src="./resources/video/thesis.mp4"></video>
-            <h1>Reigmagine urban</h1>
-            <p>"Curabitur vitae libero in ipsum porttitor consequat. 
-                Aliquam et commodo lectus, nec consequat neque.
-                Sed non accumsan urna. Phasellus sed consequat ex.
-                Etiam eget magna laoreet, efficitur dolor consequat, 
-                tristique ligula."</p>
-            <article>
-                <img src="./resources/images/thesis-fisma.jpg">
-                <h1>Fisma: Design and Prototype</h1>
-                <p>Designer schowcase of new prototype product</p>
-            </article>
-            <article>
-                <img src="./resources/images/thesis-now-and-then.jpg">
-                <h1>Now and then</h1>
-                <p>Research study about New York</p>
-            </article>
-        </section>
+<!-- thesis Exhibit Section -->
+  <article class="start-learning split-grid bg-white">
+    <h1>Thesis exhibit</h1>
+  </article>
+  <article class="thesis-exhibits bg-white">
+    <video src="./resources/video/thesis.mp4"></video>
+    <div>
+      <h1>Reigmagine urban</h1>
+      <p>"Curabitur vitae libero in ipsum porttitor consequat. 
+          Aliquam et commodo lectus, nec consequat neque.
+          Sed non accumsan urna. Phasellus sed consequat ex.
+          Etiam eget magna laoreet, efficitur dolor consequat, 
+          tristique ligula."</p>
+    </div>
+  </article>
+  <article class="aside-thesis ">
+      <div class="bg-image thesis-fisma"></div>
+      <div>
+        <h1>Fisma: Design and Prototype</h1>
+        <p>Designer schowcase of new prototype product</p>
+      </div>
+  </article>
+  <article class="aside-thesis bg-white">
+      <div class="bg-image thesis-now-and-then"></div>
+      <div>
+        <h1>Now and then</h1>
+        <p>Research study about New York</p>
+      </div>
+    </article>
+    <article class="aside-thesis bg-white">
+    </article>
 
 <!-- Footer -->
-        <footer>
-            <p>	&copy; 2016 Colmar Academy. All rights reserved</p>
-            <a href="#">Terms</a>
-            <a href="#"></a>
-        </footer>
 
-    </body>
+    <article class="footer-left">
+      <p>	&copy; 2016 Colmar Academy. All rights reserved</p>
+    </article>
+    <article class="footer-right">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </article>
+
+  </main>
+
+</body>
+
 </html>
